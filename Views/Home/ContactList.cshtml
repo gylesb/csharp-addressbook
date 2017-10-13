@@ -5,6 +5,18 @@
     <title>Address Book</title>
   </head>
   <body>
-
+    <h1>Contact List</h1>
+    <ul>
+      @foreach(string contact in Model)
+      {
+        <li>@Contact</li>
+      }
+    </ul>
+    <p><a href="/">Create another contact</a></p>
+    <br>
+    <br>
+    <form action="contact/list/clear" method="post">
+      <button type="submit" name="btnSubmit" class="btn btn-danger">Clear All Contacts</button>
+    </form>
   </body>
 </html>

@@ -12,14 +12,14 @@ namespace Contact.Controllers
       return View();
     }
 
-    [HttpGet("/contacts/list")]
+    [HttpGet("/contact/list")]
     public ActionResult ContactList()
     {
       List<string> allContacts = Contacts.GetAll();
         return View(allContacts);
     }
 
-    [HttpPost("/contacts/create")]
+    [HttpPost("/contact/create")]
     public ActionResult CreateContact()
     {
       Contact newContact = new Contact (Request.Form["contactName"], Request.Form["contactAddress"], Request.Form["contactPhone"]);

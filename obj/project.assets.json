@@ -9554,16 +9554,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/soloProject5/AddressBook.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/soloFriday5/AddressBook.csproj",
       "projectName": "AddressBook",
-      "projectPath": "/Users/Guest/Desktop/soloProject5/AddressBook.csproj",
-      "outputPath": "/Users/Guest/Desktop/soloProject5/obj/",
+      "projectPath": "/Users/Guest/Desktop/soloFriday5/AddressBook.csproj",
+      "outputPath": "/Users/Guest/Desktop/soloFriday5/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/AddressBook.dll": "/Users/Guest/Desktop/soloProject5/bin/placeholder/netcoreapp1.1/AddressBook.dll"
+        "lib/netcoreapp1.1/AddressBook.dll": "/Users/Guest/Desktop/soloFriday5/bin/placeholder/netcoreapp1.1/AddressBook.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

@@ -15,8 +15,8 @@ namespace Contact.Controllers
     [HttpGet("/contact/list")]
     public ActionResult Contacts()
     {
-      List<string> allContacts = ContactList.GetAll();
-        return View(allContacts);
+      List<string> allContactsList = ContactList.GetAll();
+        return View(allContactsList);
     }
 
     [HttpPost("/contact/create")]

@@ -49,7 +49,7 @@ namespace Contact.Models
     }
     public void Save()
     {
-      _instances.Add((_name + _address + _phone));
+      _instances.Add((_name + " " + _address + " " + _phone));
     }
     public static void ClearAll()
     {

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace ContactList.Models
+namespace Contact.Models
 {
-  public class Contact
+  public class ContactList
   {
     private string _name;
     private string _address;
@@ -11,7 +11,7 @@ namespace ContactList.Models
     private static List<string> _instances = new List<string> {};
 
     // Constructor
-    public Contact (string name, string description, string phone)
+    public ContactList (string name, string address, string phone)
     {
       _name = name;
       _address = address;

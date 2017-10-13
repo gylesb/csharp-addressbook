@@ -1,4 +1,4 @@
-using System.Collecctions.Generic;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Contact.Models;
 
@@ -13,16 +13,16 @@ namespace Contact.Controllers
     }
 
     [HttpGet("/contact/list")]
-    public ActionResult ContactList()
+    public ActionResult Contacts()
     {
-      List<string> allContacts = Contacts.GetAll();
+      List<string> allContacts = ContactList.GetAll();
         return View(allContacts);
     }
 
     [HttpPost("/contact/create")]
     public ActionResult CreateContact()
     {
-      Contact newContact = new Contact (Request.Form["contactName"], Request.Form["contactAddress"], Request.Form["contactPhone"]);
+      ContactList newContact = new ContactList (Request.Form["contactName"], Request.Form["contactAddress"], Request.Form["contactPhone"]);
       newContact.Save();
       return View(newContact);
     }
@@ -30,7 +30,7 @@ namespace Contact.Controllers
     [HttpPost ("/contact/list/clear")]
     public ActionResult ContactListClear()
     {
-      Contact.ClearAll();
+      ContactList.ClearAll();
       return View();
     }
   }
